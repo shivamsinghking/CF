@@ -8,18 +8,21 @@ import java.util.*;
       https://codeforces.com/contest/1731/problem/C  -> this is ques. just by replacing map with array, it is Accepted
    4.    
  */
-
 public class Main {
-    static PrintWriter out;
-    static Kioken sc;
-    static boolean checkOnlineJudge = System.getProperty("ONLINE_JUDGE") == null;
-
     public static void main(String[] args) throws FileNotFoundException {
-        boolean t = true;
-        boolean f = false;
+        Solution s = new Solution();
+        s.solver();
+    }
+}
+
+class Solution {
+    PrintWriter out;
+    Kioken sc;
+    boolean checkOnlineJudge = System.getProperty("ONLINE_JUDGE") == null;
+    void solver() throws FileNotFoundException{
         if (checkOnlineJudge) {
-            out = new PrintWriter("E:/CODEFORCES/output.txt");
-            sc = new Kioken(new File("E:/CODEFORCES/input.txt"));
+            out = new PrintWriter("C:/Users/91830/Documents/Codeforces_v2/output.txt");
+            sc = new Kioken(new File("C:/Users/91830/Documents/Codeforces_v2/input.txt"));
         } else {
             out = new PrintWriter((System.out));
             sc = new Kioken();
@@ -33,12 +36,12 @@ public class Main {
         out.flush();
         out.close();
     }
-
-    public static void solve() {
-        
+    
+    void solve(){
+       
     }
-
-    public static long gcd(long a, long b) {
+    
+    long gcd(long a, long b) {
         while (b != 0) {
             long rem = a % b;
             a = b;
@@ -47,22 +50,22 @@ public class Main {
         return a;
     }
 
-    static long MOD = 1000000007;
-    static void reverseSort(int[] arr){List<Integer> list = new ArrayList<>();for (int i=0; i<arr.length; i++){list.add(arr[i]);}Collections.sort(list, Collections.reverseOrder());for (int i = 0; i < arr.length; i++){arr[i] = list.get(i);}}
-    static void sort(int[] a) {
-		ArrayList<Integer> l=new ArrayList<>();
-		for (int i:a) l.add(i);
-		Collections.sort(l);
-		for (int i=0; i<a.length; i++) a[i]=l.get(i);
-	}
-    static void sort(long[] a){
-        ArrayList<Long> l=new ArrayList<>();
-		for (long i:a) l.add(i);
-		Collections.sort(l);
-		for (int i=0; i<a.length; i++) a[i]=l.get(i);
+    long MOD = 1000000007;
+    void reverseSort(int[] arr){List<Integer> list = new ArrayList<>();for (int i=0; i<arr.length; i++){list.add(arr[i]);}Collections.sort(list, Collections.reverseOrder());for (int i = 0; i < arr.length; i++){arr[i] = list.get(i);}}
+    void sort(int[] a) {
+        ArrayList<Integer> l=new ArrayList<>();
+        for (int i:a) l.add(i);
+        Collections.sort(l);
+        for (int i=0; i<a.length; i++) a[i]=l.get(i);
     }
-    
-    static class Kioken {
+    void sort(long[] a){
+        ArrayList<Long> l=new ArrayList<>();
+        for (long i:a) l.add(i);
+        Collections.sort(l);
+        for (int i=0; i<a.length; i++) a[i]=l.get(i);
+    }
+}
+class Kioken {
         // FileInputStream br = new FileInputStream("input.txt");
         BufferedReader br;
         StringTokenizer st;
@@ -151,4 +154,3 @@ public class Main {
             return arr;
         }
     }
-}
