@@ -1,0 +1,20 @@
+1. Check long for over flow can and MODULO
+
+MATRIX | ARRAYS adjancet elements
+2. When there is matching or difference type question, once see consider parity of questions as well.
+
+NUMBER THEORY
+1. for (0, n, x) is taking longer time that ( for 0, n/x, 1) [ Colin galen numer thoery sheet - Problem M]
+2. Remember 10^9 get Prime factors -> you need only 31268 values, seive(31268) and generate all primes in range [0, 31268]
+   
+
+
+GRAPH THEORY
+1. When doing bfs are any thing where O(N) is close to 10^7 -> try to only make use of array
+   instead of Deque OR Queue to avoid TLE.
+2. 
+
+
+CONSTRUCTIVE ALGO
+1. If you find, that sequence of number, or steps doesn't matter then try to calculate the contribution on each element in the answer
+[ https://codeforces.com/problemset/problem/848/A ]

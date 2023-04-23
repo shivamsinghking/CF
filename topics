@@ -1,0 +1,42 @@
+DP - 
+1. Convex Hull
+2. Dp optimization - (vivek gupta YT)
+3. Divide and conquer { question on merge and quick are important }
+
+------------------------------------------
+Number Thoery - 
+1. CRT - [DONE]
+2. Wilson theorum
+3. Seive - [ DONE ]
+4. Extend Seive - [ DONE ]
+5. GCD - [ DONE ]
+6. Mobius inversion
+7. Fermit little theorem
+8. Bezoult theorum - See if there is time { encounter: Colin Number theory sheet : Problem D}
+9. Goldbach Conjecture ==> Any number can be represent as sum of 2 or 3 prime number { Remenber this... }
+[https://www.geeksforgeeks.org/program-for-goldbachs-conjecture-two-primes-with-given-sum/]
+[Problem - https://codeforces.com/problemset/problem/735/D]
+
+10. 
+
+-------------------------------------------
+GRAPHS - 
+1. Dijstra algo - SHORTEST PATH - weighted graph
+2. bellman ford - [ -ve WEIGHT EDGE ] -> O(n^2)
+3. LCA using binary lifting
+4. Binary lifting -> [ Look into it once ]
+5. Flatting the tree [ DONE ]
+6. Centroid decomposition {!important till Expert} [ DONE ]
+7. DSU [ done ]
+8. dfs, bfs {multi source bfs} [ done ]
+9. Spanning tree { NOT DONE } ----
+10. FLOW { NOT DONE } ---- 
+11. Tree Coloring { See that is this ? }
+12. Dynamic connectivity - [ PENDING... ]
+
+-------------------------------------------
+STRINGS - 
+1. KMP - matching prefix
+2. Z algo - matching prefix
+
+-------------------------------------------
